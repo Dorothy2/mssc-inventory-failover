@@ -7,7 +7,7 @@
         <artifactId>sfg-brewery-bom</artifactId>
         <version>1.0.11</version>
 	</parent>
-	<groupId>com.drivai</groupId>
+	<groupId>com.drifai</groupId>
 	<artifactId>mssc-inventory-failover</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mssc-inventory-failover</name>
@@ -22,7 +22,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -34,10 +33,15 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		 <dependency>
+		<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency> 
+        <dependency>
+        	<groupId>net.logstash.logback</groupId>
+        	<artifactId>logstash-logback-encoder</artifactId>
+        	<version>6.5</version>
+        </dependency>                
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
